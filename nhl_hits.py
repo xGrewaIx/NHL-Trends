@@ -11,6 +11,8 @@ import os
 # add file name where data is
 directory = 'money_puck_data'
 
+## First we are analyzing how much hitting has increased or decreased over
+## the years as the general consesnous is that hitting has decreased
 # create a new dataframe where we will keep the hiting data 
 hitting_data = pd.DataFrame({'Year':
     ['08-09', '09-10', '10-11', '11-12', '13-14', '14-15', '15-16', '16-17', '17-18', '18-19', '21-22', '22-23'],
@@ -29,18 +31,23 @@ for file in os.listdir(directory):
         current_year_index += 1
         
 ## test to see if data prints 
-## print(hitting_data)
+print(hitting_data)
 
 # the below code that has been commented out is the hits_per_year plot in figures
-"""
+
 hits_per_year = plt.plot(hitting_data['Year'], hitting_data['Total Hits'], marker='o') # Line plot with markers at each data point
 plt.title('Total Hits by Year') # Title of the graph
 plt.xlabel('Year') # Label for the x-axis
 plt.ylabel('Total Hits') # Label for the y-axis
+plt.annotate('Vegas Expansion',xy=('17-18',109746),
+             xytext=('17-18',105000),
+             arrowprops=dict(facecolor="gold",shrink=0.05))
+plt.annotate('Seattle Expansion',xy=('21-22',120372),
+             xytext=('17-18',122500),
+             arrowprops=dict(facecolor="Teal",shrink=0.05))
 plt.xticks(rotation=45) # Rotate the x-axis labels to make them readable
 plt.tight_layout() # Adjust the layout so everything fits without overlapping
 plt.show() # Display the plot
-"""
 
 
 
