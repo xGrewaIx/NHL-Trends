@@ -29,6 +29,7 @@ for year, df in data_per_year.items():
     plt.xlabel("Standing")
     plt.ylabel("Hits For")
     plt.ylim([1500,6500])
+    plt.xlim([0,33])
     plt.title(f'Standings by Hits')
     
 plt.show()
@@ -41,6 +42,7 @@ for year, df in data_per_year.items():
     plt.xlabel("Standing")
     plt.ylabel("penality Minutes for")
     plt.ylim([500,3000])
+    plt.xlim([0,33])
     plt.title(f'Standings by PIMS')
     
 plt.show()
@@ -55,6 +57,7 @@ for year, df in data_per_year.items():
     plt.xlabel("Standing")
     plt.ylabel("Hits For")
     plt.ylim([2000,5500])
+    plt.xlim([0,33])
     plt.title(f'Standings by Hits {year2} - {year3}')
     plt.show()
 
@@ -66,5 +69,6 @@ for year, df in data_per_year.items():
     plt.xlabel("Standing")
     plt.ylabel("penality Minutes for")
     plt.ylim([500,3000])
+    plt.xlim([0,33])
     plt.title(f'Standings by PIMS {year2} - {year3}')
     plt.show()  
