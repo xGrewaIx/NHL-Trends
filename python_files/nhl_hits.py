@@ -33,7 +33,7 @@ for file in os.listdir(directory):
 ## test to see if data prints 
 print(hitting_data)
 
-# the below code that has been commented out is the hits_per_year plot in figures
+
 plt.style.use("classic")
 
 hits_per_year = plt.plot(hitting_data['Year'], hitting_data['Total Hits'], marker='o') # Line plot with markers at each data point

@@ -32,7 +32,7 @@ for file in os.listdir(directory):
 print(penalty_data)
 
 plt.style.use("classic")
-# the below code that has been commented out is the PIMS_per_year plot in figures
+
 
 PIMS_per_year = plt.plot(penalty_data['Year'], penalty_data['Total PIMS'], marker='o') # Line plot with markers at each data point
 plt.title('Total PIMS by Year') # Title of the graph
