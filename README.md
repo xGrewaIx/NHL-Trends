@@ -1,6 +1,6 @@
 # NHL-Trends
 
-## Information about what this repository
+## Information about this repository
 
 This repository showcases my ongoing work in the analysis of how ice hockey has evolved since data has been tracked (2008-2009). Later on I will dive into each Stanley Cup winning team and try to find common attributes amongst Stanley Cup winning teams
 
